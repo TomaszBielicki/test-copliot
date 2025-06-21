@@ -63,7 +63,9 @@ const Dashboard: React.FC = () => {
 
   // Stan filtrowania statusów aukcji
   const allAuctionStatuses = ["draft", "published", "sold"];
-  const [selectedStatuses, setSelectedStatuses] = useState<string[]>([...allAuctionStatuses]);
+  const [selectedStatuses, setSelectedStatuses] = useState<string[]>([
+    ...allAuctionStatuses,
+  ]);
 
   const handleStatusToggle = (status: string) => {
     setSelectedStatuses((prev) =>
@@ -152,7 +154,9 @@ const Dashboard: React.FC = () => {
   // Stan zakresu dat dla wykresu revenue
   const allRevenueDates = revenueData.map((d) => d.date);
   const minRevenueDate = allRevenueDates.length ? allRevenueDates[0] : "";
-  const maxRevenueDate = allRevenueDates.length ? allRevenueDates[allRevenueDates.length - 1] : "";
+  const maxRevenueDate = allRevenueDates.length
+    ? allRevenueDates[allRevenueDates.length - 1]
+    : "";
   const [revenueDateFrom, setRevenueDateFrom] = useState(minRevenueDate);
   const [revenueDateTo, setRevenueDateTo] = useState(maxRevenueDate);
 
@@ -172,9 +176,7 @@ const Dashboard: React.FC = () => {
     revenueDateFrom && revenueDateTo
       ? getDateRangeArray(revenueDateFrom, revenueDateTo).map((date) => {
           const found = revenueData.find((d) => d.date === date);
-          return (
-            found || { date, revenue: 0, sold_quantity: 0 }
-          );
+          return found || { date, revenue: 0, sold_quantity: 0 };
         })
       : revenueData;
 
@@ -276,24 +278,26 @@ const Dashboard: React.FC = () => {
           <div className="flex flex-col gap-2">
             {/* Zakres dat do filtrowania wykresu revenue */}
             <div className="flex gap-2 items-center mb-2">
-              <label className="text-sm">Od:
+              <label className="text-sm">
+                Od:
                 <input
                   type="date"
                   className="ml-1 border rounded px-2 py-1 text-sm"
                   min={minRevenueDate}
                   max={revenueDateTo || maxRevenueDate}
                   value={revenueDateFrom}
-                  onChange={e => setRevenueDateFrom(e.target.value)}
+                  onChange={(e) => setRevenueDateFrom(e.target.value)}
                 />
               </label>
-              <label className="text-sm">Do:
+              <label className="text-sm">
+                Do:
                 <input
                   type="date"
                   className="ml-1 border rounded px-2 py-1 text-sm"
                   min={revenueDateFrom || minRevenueDate}
                   max={maxRevenueDate}
                   value={revenueDateTo}
-                  onChange={e => setRevenueDateTo(e.target.value)}
+                  onChange={(e) => setRevenueDateTo(e.target.value)}
                 />
               </label>
             </div>
