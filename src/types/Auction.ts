@@ -3,6 +3,7 @@ export interface Auction {
   sku: string;
   title: string;
   price: number;
+  quantity: number;
   status: "draft" | "published" | "sold";
   listing_date: string;
 }

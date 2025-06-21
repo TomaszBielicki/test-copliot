@@ -8,6 +8,9 @@ export const orders: Order[] = [
     quantity: 10,
     expected_date: "2025-06-10",
     purchase_price: 100,
+    customerName: "Jan Kowalski",
+    customerPhone: "+48 600 100 200",
+    customerAddress: "ul. Długa 1, Warszawa",
   },
   {
     order_id: "O2",
@@ -16,6 +19,9 @@ export const orders: Order[] = [
     quantity: 5,
     expected_date: "2025-06-11",
     purchase_price: 80,
+    customerName: "Anna Nowak",
+    customerPhone: "+48 601 200 300",
+    customerAddress: "ul. Krótka 2, Kraków",
   },
   {
     order_id: "O3",
@@ -24,6 +30,9 @@ export const orders: Order[] = [
     quantity: 8,
     expected_date: "2025-06-12",
     purchase_price: 90,
+    customerName: "Piotr Zieliński",
+    customerPhone: "+48 602 300 400",
+    customerAddress: "ul. Szeroka 3, Gdańsk",
   },
   {
     order_id: "O4",
@@ -32,6 +41,9 @@ export const orders: Order[] = [
     quantity: 12,
     expected_date: "2025-06-13",
     purchase_price: 110,
+    customerName: "Jan Kowalski",
+    customerPhone: "+48 600 100 200",
+    customerAddress: "ul. Długa 1, Warszawa",
   },
   {
     order_id: "O5",
@@ -40,6 +52,9 @@ export const orders: Order[] = [
     quantity: 7,
     expected_date: "2025-06-14",
     purchase_price: 85,
+    customerName: "Anna Nowak",
+    customerPhone: "+48 601 200 300",
+    customerAddress: "ul. Krótka 2, Kraków",
   },
   {
     order_id: "O6",
@@ -48,6 +63,9 @@ export const orders: Order[] = [
     quantity: 9,
     expected_date: "2025-06-15",
     purchase_price: 95,
+    customerName: "Piotr Zieliński",
+    customerPhone: "+48 602 300 400",
+    customerAddress: "ul. Szeroka 3, Gdańsk",
   },
   {
     order_id: "O7",
@@ -56,6 +74,9 @@ export const orders: Order[] = [
     quantity: 15,
     expected_date: "2025-06-16",
     purchase_price: 120,
+    customerName: "Jan Kowalski",
+    customerPhone: "+48 600 100 200",
+    customerAddress: "ul. Długa 1, Warszawa",
   },
   {
     order_id: "O8",
@@ -64,6 +85,9 @@ export const orders: Order[] = [
     quantity: 6,
     expected_date: "2025-06-17",
     purchase_price: 82,
+    customerName: "Anna Nowak",
+    customerPhone: "+48 601 200 300",
+    customerAddress: "ul. Krótka 2, Kraków",
   },
   {
     order_id: "O9",
@@ -72,6 +96,9 @@ export const orders: Order[] = [
     quantity: 11,
     expected_date: "2025-06-18",
     purchase_price: 100,
+    customerName: "Piotr Zieliński",
+    customerPhone: "+48 602 300 400",
+    customerAddress: "ul. Szeroka 3, Gdańsk",
   },
   {
     order_id: "O10",
@@ -80,6 +107,9 @@ export const orders: Order[] = [
     quantity: 13,
     expected_date: "2025-06-19",
     purchase_price: 115,
+    customerName: "Jan Kowalski",
+    customerPhone: "+48 600 100 200",
+    customerAddress: "ul. Długa 1, Warszawa",
   },
   {
     order_id: "O11",
@@ -88,6 +118,9 @@ export const orders: Order[] = [
     quantity: 10,
     expected_date: "2025-06-20",
     purchase_price: 105,
+    customerName: "Anna Nowak",
+    customerPhone: "+48 601 200 300",
+    customerAddress: "ul. Krótka 2, Kraków",
   },
   {
     order_id: "O12",
@@ -96,6 +129,9 @@ export const orders: Order[] = [
     quantity: 8,
     expected_date: "2025-06-21",
     purchase_price: 92,
+    customerName: "Piotr Zieliński",
+    customerPhone: "+48 602 300 400",
+    customerAddress: "ul. Szeroka 3, Gdańsk",
   },
   {
     order_id: "O13",
@@ -104,6 +140,9 @@ export const orders: Order[] = [
     quantity: 14,
     expected_date: "2025-06-22",
     purchase_price: 125,
+    customerName: "Jan Kowalski",
+    customerPhone: "+48 600 100 200",
+    customerAddress: "ul. Długa 1, Warszawa",
   },
   {
     order_id: "O14",
@@ -112,6 +151,9 @@ export const orders: Order[] = [
     quantity: 9,
     expected_date: "2025-06-23",
     purchase_price: 98,
+    customerName: "Anna Nowak",
+    customerPhone: "+48 601 200 300",
+    customerAddress: "ul. Krótka 2, Kraków",
   },
   {
     order_id: "O15",
@@ -120,5 +162,8 @@ export const orders: Order[] = [
     quantity: 7,
     expected_date: "2025-06-24",
     purchase_price: 88,
+    customerName: "Piotr Zieliński",
+    customerPhone: "+48 602 300 400",
+    customerAddress: "ul. Szeroka 3, Gdańsk",
   },
 ];

@@ -5,4 +5,7 @@ export interface Order {
   quantity: number;
   expected_date: string;
   purchase_price: number;
+  customerName: string;
+  customerPhone: string;
+  customerAddress: string;
 }
