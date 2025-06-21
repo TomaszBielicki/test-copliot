@@ -1,10 +1,9 @@
-import UsersTable from "./components/UsersTable/UsersTable";
-import { users } from "./mocks/users";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <div>
-      <UsersTable users={users} />
+      <Dashboard />
     </div>
   );
 }
